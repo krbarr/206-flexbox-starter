@@ -95,8 +95,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*Large Background Image*/
 html {
-  background-color: #fff;
+  background-color: #004d80;
   height: 100%;
   width: 100%;
 }
@@ -105,49 +106,54 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 0 2em;
   font-size: 1.25em;
-  height: 100%;
   color: #fff;
-}
-
-header,
-footer {
-  background-color: #222;
-  height: 80px;
-  width: 100%;
-}
-
-main {
-  background-color: #ccc;
-  height: 250px;
-  width: 100%;
-}
-
-header,
-footer,
-main {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .flex-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 1200px;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
+header,
+footer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 2.25em;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center:;
+  border-bottom: 2px solid white;
+}
+
+main p {
+  font-size: 1.75em;
+}
+
+
 .flex-items {
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  width: 30%;
-  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  width: 30%;
+}
+
+footer {
+  font-size: 2em;
+  border-top: 2px solid white;
 }
 
 /* ==========================================================================
